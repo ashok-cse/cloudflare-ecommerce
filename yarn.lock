@@ -30,6 +30,11 @@
   dependencies:
     "regenerator-runtime" "^0.13.4"
 
+"@cloudflare/workers-types@^3.14.0":
+  "integrity" "sha512-gaBUSaKS65mN3iKZEgichbXYEmAa/pXkc5Gbt+1BptYphdGkj09ggdsiE4w8g0F/uI1g36QaTKrzVnBAWMipvQ=="
+  "resolved" "https://registry.npmjs.org/@cloudflare/workers-types/-/workers-types-3.16.0.tgz"
+  "version" "3.16.0"
+
 "@eslint/eslintrc@^0.4.3":
   "integrity" "sha512-J6KFFz5QCYUJq3pf0mjEcCJVERbzv71PUIDczuh9JkwGEzced6CO5ADLHB1rbf/+oPBtoPfMYNOpGDzCANlbXw=="
   "resolved" "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-0.4.3.tgz"
@@ -104,9 +109,9 @@
   "version" "2.2.5"
 
 "@mapbox/node-pre-gyp@^1.0.5":
-  "integrity" "sha512-aDF3S3rK9Q2gey/WAttUlISduDItz5BU3306M9Eyv6/oS40aMprnopshtlKTykxRNIBEZuRMaZAnbrQ4QtKGyw=="
-  "resolved" "https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.9.tgz"
-  "version" "1.0.9"
+  "integrity" "sha512-4ySo4CjzStuprMwk35H5pPbkymjv1SF3jGLj6rAHp/xT/RF7TL7bd9CTm1xDY49K2qF7jmR/g7k+SkLETP6opA=="
+  "resolved" "https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.10.tgz"
+  "version" "1.0.10"
   dependencies:
     "detect-libc" "^2.0.0"
     "https-proxy-agent" "^5.0.0"
@@ -168,50 +173,40 @@
     "estree-walker" "^2.0.1"
     "picomatch" "^2.2.2"
 
-"@sveltejs/adapter-auto@next":
-  "integrity" "sha512-LyaeU0rkcymGWvV/3K26AZxqG/+ZQHwa+hrx3xsbmOykjQ2WQPTXRVwmH23zV4A5ABvni76LRMsQOoqWzP3G9Q=="
-  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-auto/-/adapter-auto-1.0.0-next.53.tgz"
-  "version" "1.0.0-next.53"
+"@sveltejs/adapter-auto@^1.0.0-next.80":
+  "integrity" "sha512-352WoZr9fQgxJqgNENvxRr2gsA+wTF6V9AVaQaaatDYd3RVEBaXTYOOalFaRLSa25mRUJaLYP2aaliqczMl23g=="
+  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-auto/-/adapter-auto-1.0.0-next.80.tgz"
+  "version" "1.0.0-next.80"
   dependencies:
-    "@sveltejs/adapter-cloudflare" "1.0.0-next.24"
-    "@sveltejs/adapter-netlify" "1.0.0-next.66"
-    "@sveltejs/adapter-vercel" "1.0.0-next.59"
+    "@sveltejs/adapter-cloudflare" "1.0.0-next.38"
+    "@sveltejs/adapter-netlify" "1.0.0-next.78"
+    "@sveltejs/adapter-vercel" "1.0.0-next.77"
 
-"@sveltejs/adapter-cloudflare@1.0.0-next.24":
-  "integrity" "sha512-g1QSrjWYjM6sfJB+pQn52EIfbVFjpk23GYsj5PLt2Gi3zRNfLRbpkFkPeyAOZbAfT4k/9lUqfLW+pkh+W3yxlg=="
-  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-cloudflare/-/adapter-cloudflare-1.0.0-next.24.tgz"
-  "version" "1.0.0-next.24"
+"@sveltejs/adapter-cloudflare@1.0.0-next.38":
+  "integrity" "sha512-N6jdTomRZkdKlcNoguwYD7lpdXSt0beIyUJsp0MS/YLm/4gI83y698zFYInFKJ9t5e6DAnuEBSAXcg568z2oFA=="
+  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-cloudflare/-/adapter-cloudflare-1.0.0-next.38.tgz"
+  "version" "1.0.0-next.38"
   dependencies:
-    "esbuild" "^0.14.42"
+    "@cloudflare/workers-types" "^3.14.0"
+    "esbuild" "^0.15.7"
     "worktop" "0.8.0-next.14"
 
-"@sveltejs/adapter-netlify@^1.0.0-next.65":
-  "integrity" "sha512-81LYVqT0Fez7xqvOdE9ITD7b5kxdzzXjXwJ0ISBfJYt6wqg0fmABm3mcDy3opXau7DoQkhkhnlqkharTHfhJQg=="
-  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-netlify/-/adapter-netlify-1.0.0-next.65.tgz"
-  "version" "1.0.0-next.65"
+"@sveltejs/adapter-netlify@^1.0.0-next.65", "@sveltejs/adapter-netlify@1.0.0-next.78":
+  "integrity" "sha512-Yyn/j/0QcLK3Db442ducLUZmyvkO74j7Gdcwu9xN0fQN3kBlCJP9Itx5o4SySrPFGc4Q8cLJ5ELNg+mWduLBAA=="
+  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-netlify/-/adapter-netlify-1.0.0-next.78.tgz"
+  "version" "1.0.0-next.78"
   dependencies:
     "@iarna/toml" "^2.2.5"
-    "esbuild" "^0.14.42"
+    "esbuild" "^0.15.7"
     "set-cookie-parser" "^2.4.8"
-    "tiny-glob" "^0.2.9"
 
-"@sveltejs/adapter-netlify@1.0.0-next.66":
-  "integrity" "sha512-UypTRnTd+R1O6SaDdc8l3A3c9/mQF8xLNoVb3Ay5ipb7uPU5WmjVYjfLVGyeVy67gztFfeFC/9Esu4OI2Ayx1A=="
-  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-netlify/-/adapter-netlify-1.0.0-next.66.tgz"
-  "version" "1.0.0-next.66"
+"@sveltejs/adapter-vercel@1.0.0-next.77":
+  "integrity" "sha512-r4MqtP+lzx83HfcvI8PU0Yxzmxt6WQq9nzZETLboJouJzhSBUFIN5RmNZfEn6nNIlUwZbGQUEK/FxsRnnxI/Ig=="
+  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.77.tgz"
+  "version" "1.0.0-next.77"
   dependencies:
-    "@iarna/toml" "^2.2.5"
-    "esbuild" "^0.14.42"
-    "set-cookie-parser" "^2.4.8"
-    "tiny-glob" "^0.2.9"
-
-"@sveltejs/adapter-vercel@1.0.0-next.59":
-  "integrity" "sha512-1lq5IFLWiLUXmNJVUXjwaInDb07BJg5er43xlMilpFpTA9BZI2hqjYCgtdtk7O6ee5EYJk876b2riM1m+y1M4Q=="
-  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.59.tgz"
-  "version" "1.0.0-next.59"
-  dependencies:
-    "@vercel/nft" "^0.20.0"
-    "esbuild" "^0.14.42"
+    "@vercel/nft" "^0.22.0"
+    "esbuild" "^0.15.7"
 
 "@sveltejs/kit@next":
   "integrity" "sha512-nCAehVybIEpQNnPu61V/EFVdfDb1nBSiQUfW9EcSSDEUbyAMCVBOKZZuzQ0qQDp3xniqRkyDzpBA4wN+ADxHBw=="
@@ -245,13 +240,14 @@
   "resolved" "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.182.tgz"
   "version" "4.14.182"
 
-"@vercel/nft@^0.20.0":
-  "integrity" "sha512-hSLcr64KHOkcNiTAlv154K4p4faEFBwYIi2eIgu1QCDhB1qyQYvFuEhtw3eaapNjA4/7x/2jcclfCAjILua/ag=="
-  "resolved" "https://registry.npmjs.org/@vercel/nft/-/nft-0.20.1.tgz"
-  "version" "0.20.1"
+"@vercel/nft@^0.22.0":
+  "integrity" "sha512-lYYZIoxRurqDOSoVIdBicGnpUIpfyaS5qVjdPq+EfI285WqtZK3NK/dyCkiyBul+X2U2OEhRyeMdXPCHGJbohw=="
+  "resolved" "https://registry.npmjs.org/@vercel/nft/-/nft-0.22.1.tgz"
+  "version" "0.22.1"
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.5"
     "acorn" "^8.6.0"
+    "async-sema" "^3.1.1"
     "bindings" "^1.4.0"
     "estree-walker" "2.0.2"
     "glob" "^7.1.3"
@@ -388,6 +384,11 @@
   "integrity" "sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ=="
   "resolved" "https://registry.npmjs.org/astral-regex/-/astral-regex-2.0.0.tgz"
   "version" "2.0.0"
+
+"async-sema@^3.1.1":
+  "integrity" "sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg=="
+  "resolved" "https://registry.npmjs.org/async-sema/-/async-sema-3.1.1.tgz"
+  "version" "3.1.1"
 
 "autoprefixer@^10.4.7":
   "integrity" "sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA=="
@@ -675,12 +676,17 @@
   dependencies:
     "ansi-colors" "^4.1.1"
 
-"esbuild-linux-64@0.14.48":
-  "integrity" "sha512-vni3p/gppLMVZLghI7oMqbOZdGmLbbKR23XFARKnszCIBpEMEDxOMNIKPmMItQrmH/iJrL1z8Jt2nynY0bE1ug=="
-  "resolved" "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.14.48.tgz"
+"esbuild-darwin-arm64@0.14.48":
+  "integrity" "sha512-bFjnNEXjhZT+IZ8RvRGNJthLWNHV5JkCtuOFOnjvo5pC0sk2/QVk0Qc06g2PV3J0TcU6kaPC3RN9yy9w2PSLEA=="
+  "resolved" "https://registry.npmjs.org/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.48.tgz"
   "version" "0.14.48"
 
-"esbuild@^0.14.27", "esbuild@^0.14.42":
+"esbuild-darwin-arm64@0.15.9":
+  "integrity" "sha512-VZIMlcRN29yg/sv7DsDwN+OeufCcoTNaTl3Vnav7dL/nvsApD7uvhVRbgyMzv0zU/PP0xRhhIpTyc7lxEzHGSw=="
+  "resolved" "https://registry.npmjs.org/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.15.9.tgz"
+  "version" "0.15.9"
+
+"esbuild@^0.14.27":
   "integrity" "sha512-w6N1Yn5MtqK2U1/WZTX9ZqUVb8IOLZkZ5AdHkT6x3cHDMVsYWC7WPdiLmx19w3i4Rwzy5LqsEMtVihG3e4rFzA=="
   "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.14.48.tgz"
   "version" "0.14.48"
@@ -705,6 +711,34 @@
     "esbuild-windows-32" "0.14.48"
     "esbuild-windows-64" "0.14.48"
     "esbuild-windows-arm64" "0.14.48"
+
+"esbuild@^0.15.7":
+  "integrity" "sha512-OnYr1rkMVxtmMHIAKZLMcEUlJmqcbxBz9QoBU8G9v455na0fuzlT/GLu6l+SRghrk0Mm2fSSciMmzV43Q8e0Gg=="
+  "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.15.9.tgz"
+  "version" "0.15.9"
+  optionalDependencies:
+    "@esbuild/android-arm" "0.15.9"
+    "@esbuild/linux-loong64" "0.15.9"
+    "esbuild-android-64" "0.15.9"
+    "esbuild-android-arm64" "0.15.9"
+    "esbuild-darwin-64" "0.15.9"
+    "esbuild-darwin-arm64" "0.15.9"
+    "esbuild-freebsd-64" "0.15.9"
+    "esbuild-freebsd-arm64" "0.15.9"
+    "esbuild-linux-32" "0.15.9"
+    "esbuild-linux-64" "0.15.9"
+    "esbuild-linux-arm" "0.15.9"
+    "esbuild-linux-arm64" "0.15.9"
+    "esbuild-linux-mips64le" "0.15.9"
+    "esbuild-linux-ppc64le" "0.15.9"
+    "esbuild-linux-riscv64" "0.15.9"
+    "esbuild-linux-s390x" "0.15.9"
+    "esbuild-netbsd-64" "0.15.9"
+    "esbuild-openbsd-64" "0.15.9"
+    "esbuild-sunos-64" "0.15.9"
+    "esbuild-windows-32" "0.15.9"
+    "esbuild-windows-64" "0.15.9"
+    "esbuild-windows-arm64" "0.15.9"
 
 "escalade@^3.1.1":
   "integrity" "sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw=="
@@ -956,6 +990,11 @@
   "integrity" "sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw=="
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
+
+"fsevents@~2.3.2":
+  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
+  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+  "version" "2.3.2"
 
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
@@ -1551,9 +1590,9 @@
   "version" "0.13.9"
 
 "regexparam@^2.0.0":
-  "integrity" "sha512-gJKwd2MVPWHAIFLsaYDZfyKzHNS4o7E/v8YmNf44vmeV2e4YfVoDToTOKTvE7ab68cRJ++kLuEXJBaEeJVt5ow=="
-  "resolved" "https://registry.npmjs.org/regexparam/-/regexparam-2.0.0.tgz"
-  "version" "2.0.0"
+  "integrity" "sha512-zRgSaYemnNYxUv+/5SeoHI0eJIgTL/A2pUtXUPLHQxUldagouJ9p+K6IbIZ/JiQuCEv2E2B1O11SjVQy3aMCkw=="
+  "resolved" "https://registry.npmjs.org/regexparam/-/regexparam-2.0.1.tgz"
+  "version" "2.0.1"
 
 "regexpp@^3.1.0":
   "integrity" "sha512-pq2bWo9mVD43nbts2wGv17XLiNLya+GklZ8kaDLV2Z08gDCsGpnKn9BFMepvWuHCbyVvY7J5o5+BVvoQbmlJLg=="
@@ -1823,7 +1862,7 @@
   "resolved" "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz"
   "version" "0.2.0"
 
-"tiny-glob@^0.2.6", "tiny-glob@^0.2.9":
+"tiny-glob@^0.2.6":
   "integrity" "sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg=="
   "resolved" "https://registry.npmjs.org/tiny-glob/-/tiny-glob-0.2.9.tgz"
   "version" "0.2.9"
